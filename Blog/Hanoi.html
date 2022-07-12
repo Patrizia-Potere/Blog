@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./style.css"/>
+    <title>Hanoi</title>
+</head>
+<body>
+<!-- Trip section to Hanoi with pictures and text -->
+    <section class="blog_container">
+        <h1>Hanoi</h1>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis 
+            nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore 
+            eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
+            sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+        <div class="blog_picture">
+            <div>
+                <img src="./images/hanoi.jpg" alt="hanoi">
+            </div>
+            <div>
+                <img src="./images/hochimin.jpg" alt="hochimin">
+            </div>
+            <div>
+                <img src="./images/halong.jpg" alt="halong-bay">
+            </div>
+            <div>
+                <img src="./images/halong1.jpg" alt="halong-bay">
+            </div>
+            <div>
+                <img src="./images/fish.jpg" alt="fish-village">
+            </div>
+        </div>
+    </section>
+    <!-- Button to call comment window -->
+    <div id="pop_msg">
+        <button id="pop" onclick="Popup()">Comment</button>
+    </div>
+    <!-- Comment area for user to send some text -->
+    <section id="user">
+        <div id="btn_x">
+            <button id="btn_delete" onclick="Delete()">X</button>
+        </div>
+        <form>
+            <div>
+                <label for="title">Title</label><br>
+                <input type="text" id="title" name="title" required/>
+            </div>
+            <div>
+                <label for="author">Author</label><br>
+                <input type="text" id="author" name="author"/>
+            </div>
+            <div>
+                <label for="comment">Add your comment</label>
+                <textarea id="comment" name="comment"></textarea>
+            </div>
+        </form>
+        <!-- Submit comment -->
+        <div id="btn_submit">
+            <button id="btn_comment" onclick="Comment()">Submit</button>
+        </div>
+    </section>
+</body>
+<!-- Link to Javascript -->
+<script src="./blog.js"></script>
+</html>

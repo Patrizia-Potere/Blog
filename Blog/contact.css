@@ -1,0 +1,106 @@
+/* CSS for contact page */
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --white:rgb(255,255,255);
+    --myborder: rgb(0, 153, 115); 
+    --shadow:rgb(121, 118, 118);
+    --hover: rgb(0,102,77);
+}
+
+html,body {
+    min-height: 100%;
+}
+
+body {
+    background-image: linear-gradient(var(--hover), rgb(0,204,150));
+    margin:0;
+}
+/* Navigation bar same as index page */
+#navbar {
+    background-color: var(--myborder);
+    word-spacing: 10px; 
+    text-align: right; 
+    padding: 10px;
+}
+
+#navbar li {
+    display: inline;
+    font-size: 25px;
+    margin:10px;
+}
+
+a {
+    text-decoration: none;
+    color: var(--white);
+}
+
+a:hover {
+    background-color: var(--hover);
+    padding:10px;
+}
+/* User form for contact */
+#user {
+    width:50%;
+    height: auto;
+    margin: 40px auto;
+    background-color: var(--white);
+    border: 3px solid var(--myborder);
+    box-shadow: 2px 2px 5px var(--shadow);
+    border-radius: 10px;
+}
+
+#user form {
+    width:60%;
+    margin: 30px 10%;
+}
+/* Title of the form*/
+#user h1 {
+    color: var(--myborder);
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#user div {
+    margin-bottom: 30px;
+}
+/* Input area */
+#user input {
+    width:80%;
+    border: 2px solid var(--myborder);
+    box-shadow: 2px 2px 5px var(--shadow);
+    height: 30px;
+    font-size: 15px;
+    border-radius: 2px;
+}
+/* Textarea */
+#user textarea {
+    border: 2px solid var(--myborder);
+    box-shadow: 2px 2px 5px var(--shadow);
+    border-radius: 2px;
+    width: 100%;
+    min-height: 200px;
+    outline: none;
+    resize: none;
+}
+/*button for submitting email */
+#link, #send{
+    text-align: center;
+}
+/* Send is the area where the button "send email" will appear */
+#link a, #send button{
+    color: var(--white);
+    background-color: var(--myborder);
+    padding: 7px;
+    border-radius: 2px;
+    border:none;
+    text-decoration: none;
+}
+/* btn Hover */
+#link a:hover , #send button:hover{
+    background-color: var(--hover);
+}
+
